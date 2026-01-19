@@ -13,7 +13,11 @@ PORT = process.env.PORT ;
 // middleware add karna hai
 app.use(express.json());    // middleware to parse the json req body
 const fileUpload = require("express-fileupload");
-app.use(fileUpload());
+// app.use(fileUpload());
+app.use(fileUpload({
+    useTempFiles: true,
+    tempFileDir: "/tmp"
+}));
 
 
 
