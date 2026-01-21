@@ -1,2 +1,7 @@
 node_modules
 .env
+
+# Uploaded files
+controllers/files/
+uploads/
+tmp/
