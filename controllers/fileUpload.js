@@ -223,14 +223,14 @@ exports.videoUpload = async (req , res)=> {
             name,
             tags,
             email,
-            videoUrl:response.secure_url, 
+            imageUrl:response.secure_url, 
         })
 
         // agar sab kuch sahi se ho jaye to successful response send kar do
 
         res.json({
             success:true,
-            videoUrl:response.secure_url,
+            imageUrl:response.secure_url,
             message:'Video Uploaded Successfully'
         })
 
